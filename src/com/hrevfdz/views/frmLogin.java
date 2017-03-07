@@ -4,13 +4,16 @@ import com.hrevfdz.dao.UsersDAO;
 import com.hrevfdz.models.Users;
 import com.hrevfdz.services.IPharmacy;
 import java.util.List;
+import javafx.geometry.Pos;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 /**
  *
  * @author theo
  */
 public class frmLogin extends javax.swing.JFrame {
-    
+
     private List<Users> usuarios;
     private Users usuario;
 
@@ -95,7 +98,7 @@ public class frmLogin extends javax.swing.JFrame {
         final String query = "select u from Users u where u.username='" + usuario.getUsername()
                 + "' and u.password='" + usuario.getPassword() + "'";
         IPharmacy<Users> dao = new UsersDAO();
-        
+
         try {
             List<Users> lista = dao.findByQuery(query);
             if (lista.size() == 1) {
@@ -105,15 +108,23 @@ public class frmLogin extends javax.swing.JFrame {
                         frmPrincipal principal = new frmPrincipal();
                         principal.setVisible(true);
 //                        this.set
+                        Notifications notificationBuilder = Notifications.create()
+                                .title("Bienvenido al sistema")
+                                .text("Acceso concedido a: " + txtUser.getText().toUpperCase())
+                                .graphic(null)
+                                .hideAfter(Duration.seconds(5))
+                                .position(Pos.TOP_RIGHT)
+                                .darkStyle();
+                        notificationBuilder.showInformation();
                     } else {
-                        
+
                     }
                 }
             } else {
-                
+
             }
         } catch (Exception ex) {
-            
+
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
 
