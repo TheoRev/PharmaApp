@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/services/PharmacyService.java</file>
             <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/views/frmLogin.java</file>
+            <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/views/ifrmStockProducto.java</file>
             <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/views/frmPrincipal.java</file>
-            <file>file:/home/theo/NetBeansProjects/PharmaApp/src/META-INF/persistence.xml</file>
-            <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/services/PharmacyConexion.java</file>
+            <file>file:/home/theo/NetBeansProjects/PharmaApp/src/com/hrevfdz/views/finders/ifrmFinderStockProducto.java</file>
         </group>
     </open-files>
 </project-private>
